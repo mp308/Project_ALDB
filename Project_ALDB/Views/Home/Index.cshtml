@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Project_ALDB.Models.ProductTransfer>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .embed-responsive-16by9 {
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        position: relative;
+    }
+
+        .embed-responsive-16by9 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+</style>
+
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-md-4">
+            <!-- Adjust the width and height attributes to resize the image -->
+            <img src="@Url.Content("~/Content/Images/logotk.png")" alt="Logo" style="width: 200px; height: auto; border-radius: 40px;">
+        </div>
+        <div class="col-md-8">
+            <div class="text-center mt-5">
+                <h1 class="display-4">Welcome </h1>
+                <h1 class="display-4">Truck Transport</h1>
+                <div class="fa-3x">
+                    <i class="fa-solid fa fa-truck fa-flip"></i>
+                </div>
+                <p>Learn about <a href="https://www.youtube.com/watch?v=k0ptsFX3bQQ">clip of transports</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-start mt-3">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Featured Article</h2>
+                    <p class="card-text">Check out our latest article on <a href="#">best practices for responsive web design</a>.</p>
+                    <div class="fa-3x">
+                        <i class="fa-solid fa-sync fa-spin"></i>
+                        <i class="fa-solid fa-circle-notch fa-spin"></i>
+                        <i class="fa-solid fa-cog fa-spin"></i>
+                        <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+                        <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                        <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Carousel for Picture Banner -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="@Url.Content("~/Content/Images/t2.png")" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/Content/Images/t1.png")" class="d-block w-100" alt="Slide 2">
+                            </div>
+                            <!-- Add more carousel items as needed -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- YouTube player -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k0ptsFX3bQQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add margin-top to create space between the carousel and the next section -->
+    <div class="col-md-10 mt-5">
+        <h1>รายการบริการที่เกิดขึ้น</h1>
+        <!-- Your list of services here -->
+        <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Listicons can</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be usedto</li>
+            <li><span class="fa-li"><i class="fa fa-car fa-check-square"></i></span>มีรถแสนต์บาย</li>
+        </ul>
+    </div>
+
+
+
+</div>
